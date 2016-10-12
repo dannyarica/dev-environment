@@ -1,0 +1,4 @@
+MSBuild.SonarQube.Runner.exe begin /k:"TODOWEBAPI" /n:"MyFirstWebAPI" /v:"1.0" /d:sonar.cs.opencover.reportsPaths="E:\MyFirstWebApiCoverageReport\MyFirstWebAPI.opencover.xml"
+"C:\Program Files (x86)\MSBuild\14.0\Bin\MSBuild.exe" /t:Rebuild
+C:\Users\danny.arica\AppData\Local\Apps\OpenCover\OpenCover.Console.exe -output:"E:\MyFirstWebApiCoverageReport\MyFirstWebAPI.opencover.xml" -register:user -target:"C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\CommonExtensions\Microsoft\TestWindow\vstest.console.exe" -targetargs:"E:\GitHub\TodoWebApi_Repo\TodoWebApi.Tests\bin\Debug\TodoWebApi.Tests.dll"
+MSBuild.SonarQube.Runner.exe end
